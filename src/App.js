@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import {OutTable, ExcelRenderer} from './Reader';
-import { Jumbotron, Col, Input, InputGroup, InputGroupAddon, FormGroup, Label, Button, Fade, FormFeedback, Container, Card } from 'reactstrap';
+import { Jumbotron, Col, Input, InputGroup, InputGroupAddon, FormGroup, Button,Label, Fade, FormFeedback, Container, Card } from 'reactstrap';
+
 
 class App extends Component {
   constructor(props){
@@ -97,11 +98,114 @@ class App extends Component {
 
         {this.state.dataLoaded && 
         <div>
-          <Card body outline color="secondary" className="restrict-card">
-            
+          
+            {/* <div style={{marginLeft:140, flexDirection:"row",display:"flex",}}>
+              <div style={{flex:1,flexDirection:"column",display:"flex",textAlign:"center",backgroundColor:"#9EB6CE"}}>
+              <Button variant="outlined" color="#9EB6CE" style={{width:"238.35px"}}>Monday</Button>
+                <div style={{flex:1,flexDirection:"row",display:"flex", }}>
+                  <div style={{flex:1,flexDirection:"row",display:"flex",}}>
+                  <Button variant="outlined" style={{width:"79.45px"}}>Mor</Button>
+                  </div>
+                  <div style={{flex:1,flexDirection:"row",display:"flex",}}>
+                  <Button variant="outlined" style={{width:"79.45px"}}>Eve</Button>
+                  </div>
+                  <div style={{flex:1,flexDirection:"row",display:"flex",}}>
+                  <Button variant="outlined" style={{width:"79.45px"}}>Nit</Button>
+                  </div>
+                </div>
+              </div>
+              <div style={{flex:1,flexDirection:"column",display:"flex",textAlign:"center",backgroundColor:"#9EB6CE"}}>
+              <Button variant="outlined" color="#9EB6CE" style={{width:"238.35px"}}>Tuesday</Button>
+                <div style={{flex:1,flexDirection:"row",display:"flex", }}>
+                  <div style={{flex:1,flexDirection:"row",display:"flex",}}>
+                  <Button style={{width:"79.45px"}}>Mor</Button>
+                  </div>
+                  <div style={{flex:1,flexDirection:"row",display:"flex",}}>
+                  <Button style={{width:"79.45px"}}>Eve</Button>
+                  </div>
+                  <div style={{flex:1,flexDirection:"row",display:"flex",}}>
+                  <Button style={{width:"79.45px"}}>Nit</Button>
+                  </div>
+                </div>
+              </div>
+              <div style={{flex:1,flexDirection:"column",display:"flex",textAlign:"center",backgroundColor:"#9EB6CE"}}>
+              <Button variant="outlined" color="#9EB6CE" style={{width:"238.35px"}}>Wednesday</Button>
+                <div style={{flex:1,flexDirection:"row",display:"flex", }}>
+                  <div style={{flex:1,flexDirection:"row",display:"flex",}}>
+                  <Button style={{width:"79.45px"}}>Mor</Button>
+                  </div>
+                  <div style={{flex:1,flexDirection:"row",display:"flex",}}>
+                  <Button style={{width:"79.45px"}}>Eve</Button>
+                  </div>
+                  <div style={{flex:1,flexDirection:"row",display:"flex",}}>
+                  <Button style={{width:"79.45px"}}>Nit</Button>
+                  </div>
+                </div>
+              </div>
+              <div style={{flex:1,flexDirection:"column",display:"flex",textAlign:"center",backgroundColor:"#9EB6CE"}}>
+              <Button variant="outlined" color="#9EB6CE" style={{width:"238.35px"}}>Thursday</Button>
+                <div style={{flex:1,flexDirection:"row",display:"flex", }}>
+                  <div style={{flex:1,flexDirection:"row",display:"flex",}}>
+                  <Button style={{width:"79.45px"}}>Mor</Button>
+                  </div>
+                  <div style={{flex:1,flexDirection:"row",display:"flex",}}>
+                  <Button style={{width:"79.45px"}}>Eve</Button>
+                  </div>
+                  <div style={{flex:1,flexDirection:"row",display:"flex",}}>
+                  <Button style={{width:"79.45px"}}>Nit</Button>
+                  </div>
+                </div>
+              </div>
+              <div style={{flex:1,flexDirection:"column",display:"flex",textAlign:"center",backgroundColor:"#9EB6CE"}}>
+              <Button variant="outlined" color="#9EB6CE" style={{width:"238.35px"}}>Friday</Button>
+                <div style={{flex:1,flexDirection:"row",display:"flex", }}>
+                  <div style={{flex:1,flexDirection:"row",display:"flex",}}>
+                  <Button style={{width:"79.45px"}}>Mor</Button>
+                  </div>
+                  <div style={{flex:1,flexDirection:"row",display:"flex",}}>
+                  <Button style={{width:"79.45px"}}>Eve</Button>
+                  </div>
+                  <div style={{flex:1,flexDirection:"row",display:"flex",}}>
+                  <Button style={{width:"79.45px"}}>Nit</Button>
+                  </div>
+                </div>
+              </div>
+              <div style={{flex:1,flexDirection:"column",display:"flex",textAlign:"center",backgroundColor:"#9EB6CE"}}>
+              <Button variant="outlined" color="#9EB6CE" style={{width:"238.35px"}}>Saturday</Button>
+                <div style={{flex:1,flexDirection:"row",display:"flex", }}>
+                  <div style={{flex:1,flexDirection:"row",display:"flex",}}>
+                  <Button style={{width:"79.45px"}}>Mor</Button>
+                  </div>
+                  <div style={{flex:1,flexDirection:"row",display:"flex",}}>
+                  <Button style={{width:"79.45px"}}>Eve</Button>
+                  </div>
+                  <div style={{flex:1,flexDirection:"row",display:"flex",}}>
+                  <Button style={{width:"79.45px"}}>Nit</Button>
+                  </div>
+                </div>
+              </div>
+              <div style={{flex:1,flexDirection:"column",display:"flex",textAlign:"center",backgroundColor:"#9EB6CE"}}>
+              <Button variant="outlined" color="#9EB6CE" style={{width:"238.35px"}}>Sunday</Button>
+                <div style={{flex:1,flexDirection:"row",display:"flex", }}>
+                  <div style={{flex:1,flexDirection:"row",display:"flex",}}>
+                  <Button style={{width:"79.45px"}}>Mor</Button>
+                  </div>
+                  <div style={{flex:1,flexDirection:"row",display:"flex",}}>
+                  <Button style={{width:"79.45px"}}>Eve</Button>
+                  </div>
+                  <div style={{flex:1,flexDirection:"row",display:"flex",}}>
+                  <Button style={{width:"79.45px"}}>Nit</Button>
+                  </div>
+                </div>
+              </div>
+
+          
+
+            </div> */}
+            <div body outline color="secondary" >
               <OutTable data={this.state.rows} columns={this.state.cols} tableClassName="ExcelTable2007" tableHeaderRowClass="heading" />
             
-          </Card>  
+          </div>  
         </div>}
         </Container>
       </div>

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import XLSX from 'xlsx';
+import { Icon, Table, Button } from 'semantic-ui-react'
+
 
 export class OutTable extends Component {
 
@@ -37,9 +39,38 @@ export class OutTable extends Component {
                             
                             }
                         </tr>
-                        {this.props.data.map((r,i) => <tr key={i}><td key={i} className={this.props.tableHeaderRowClass}>{i}</td>
-                            {this.props.columns.map(c => <td key={c.key}> {r[c.key]} </td>)}
-                            {/* {this.props.columns.map(c => <td key={c.key}>{ r[c.key]?this.setState.bgc:" " }</td>)} */}
+                        {/* {this.props.data.map((r,i) => <tr key={i}><td key={i} className={this.props.tableHeaderRowClass}>{i}</td>
+                            {this.props.columns.map(c=> <td key={c.key} style={{backgroundColor:(r[c.key]===1?"#3f51b5" : r[c.key]==="1]"?"#3f51b5" : r[c.key]==="[1"?"#3f51b5" : "#fff"), borderWidth:2  }}>
+                               {r[c.key]===1?"" : 
+                                                  r[c.key]===0?<Button>Add Schedule</Button>: 
+                                                                                              r[c.key]===  "1]" ? "": 
+                                                                                                                    r[c.key]==="0]"?<Button>Add Schedule</Button>: 
+                                                                                                                                                                  r[c.key]==="[1"?"" : 
+                                                                                                                                                                                      r[c.key]==="[0"?<Button>Add Schedule</Button>: 
+                                                                                                                                                                                                                                  r[c.key]} 
+                               
+                               
+                               </td>)}
+                               
+
+                        </tr>)} */}
+
+
+
+{this.props.data.map((r,i) => <tr key={i}><td key={i} className={this.props.tableHeaderRowClass}>{i}</td>
+                            {this.props.columns.map(c=> <td key={c.key} style={{backgroundColor:(r[c.key]===1?"#3f51b5" : r[c.key]==="1]"?"#3f51b5" : r[c.key]==="[1"?"#3f51b5" : "#fff"), borderWidth:2 , maxWidth: 60, width: '100%' }}>
+                               {r[c.key]===1?"" : 
+                                     r[c.key]===0?"": 
+                                            r[c.key]===  "1]" ? "": 
+                                                 r[c.key]==="0]"?"": 
+                                                       r[c.key]==="[1"?"" : 
+                                                             r[c.key]==="[0"?"": 
+                                                                   r[c.key]} 
+                               
+                               
+                               </td>)}
+                               
+
                         </tr>)}
                     </tbody>
                 </table>

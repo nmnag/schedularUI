@@ -4,13 +4,15 @@
   "private": true,
   "homepage": "https://ashishd751.github.io/excel-renderer-demo",
   "dependencies": {
+    "@material-ui/core": "^4.11.0",
     "bootstrap": "^4.2.1",
     "font-awesome": "^4.7.0",
-    "react": "^16.7.0",
+    "react": "^16.13.1",
     "react-dom": "^16.7.0",
     "react-excel-renderer": "^1.0.0",
     "react-scripts": "2.1.3",
-    "reactstrap": "^7.1.0"
+    "reactstrap": "^7.1.0",
+    "semantic-ui-react": "^1.2.1"
   },
   "scripts": {
     "start": "react-scripts start",
